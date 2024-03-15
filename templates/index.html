@@ -188,7 +188,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title> 
 
-        
+
 
         Check Mate
 
@@ -693,20 +693,25 @@
     </footer>
  
      <script>
-         document.getElementById("submitBtn").addEventListener("click", function () {
-             var checkboxes = document.querySelectorAll('.attendance-checkbox:checked');
-             var attendanceList = Array.from(checkboxes).map(function (checkbox) {
-                 return checkbox.value;
-             });
-     
-             var selectedRollNumbers = "Roll Numbers: " + attendanceList.join(', ');
-             var selectedCount = "Count of students: " + attendanceList.length;
-             
-             var outputDiv = document.getElementById("selectedRollNumbers");
-             var countOutputDiv = document.getElementById("selectedCount");
-             outputDiv.innerHTML = selectedRollNumbers ;
-             countOutputDiv.textContent = selectedCount;
-         });
+          document.getElementById("submitBtn").addEventListener("click", function () {
+            var checkboxes = document.querySelectorAll('.attendance-checkbox:checked');
+            var attendanceList = Array.from(checkboxes).map(function (checkbox) {
+                var value = checkbox.value;
+                if (value.startsWith("22BD5A12")) {
+                    return value.slice(-3);
+                } else {
+                    return value.slice(-2);
+                }
+            });
+
+            var selectedRollNumbers = "Roll Numbers: " + attendanceList.join(', ');
+            var selectedCount = "Count of students: " + attendanceList.length;
+
+            var outputDiv = document.getElementById("selectedRollNumbers");
+            var countOutputDiv = document.getElementById("selectedCount");
+            outputDiv.innerHTML = selectedRollNumbers;
+            countOutputDiv.textContent = selectedCount;
+        });
  
          function copyToClipboard(text) {
              const textArea = document.createElement("textarea");
@@ -715,15 +720,15 @@
              textArea.select();
              document.execCommand('copy');
              document.body.removeChild(textArea);
-         }
+        }
  
-         document.getElementById("copyBtn").addEventListener("click", function () {
+        document.getElementById("copyBtn").addEventListener("click", function () {
              var selectedRollNumbers = document.getElementById("selectedRollNumbers").textContent;
              copyToClipboard(selectedRollNumbers);
              alert("Copied to clipboard: " + selectedRollNumbers);
-         });
+        });
          
-         document.querySelectorAll('.attendance-checkbox').forEach(function(checkbox) {
+        document.querySelectorAll('.attendance-checkbox').forEach(function(checkbox) {
              checkbox.addEventListener('change', function() {
                  var row = this.parentNode.parentNode;
                  if (this.checked) {
@@ -732,7 +737,7 @@
                      row.classList.remove('checked');
                  }
              });
-         });
+        });
      </script>
 
  </body>
