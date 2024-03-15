@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -180,4 +180,528 @@
     
 </body>
 </html>
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Check Mate</title>
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             background-color: #f4f4f4;
+             margin: 0;
+             padding: 0;
+         }
+ 
+         h1 {
+             text-align: center;
+             margin-top: 20px;
+             margin-left: 70px;
+             color: #333;
+             font-size: 3em; 
+             font-weight: bold;
+             text-transform:none; 
+             font-family: 'Arial', sans-serif;
+             letter-spacing: 1px; 
+             text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
+             margin-bottom: 30px; 
+         }
+ 
+         table {
+             border-collapse: collapse;
+             width: 90%; 
+             margin: 20px auto;
+             background-color: #fff;
+             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+             border-radius: 8px; 
+         }
+ 
+         th, td {
+             border: 1px solid #ccc;
+             padding: 15px;
+             text-align: center;
+         }
+ 
+         th {
+             background-color: #f2f2f2;
+         }
+ 
+         .attendance-checkbox {
+             width: 18px;
+             height: 18px;
+         }
+ 
+         button#submitBtn {
+             display: block;
+             margin: 30px auto; 
+             padding: 12px 25px; 
+             background-color: #007BFF;
+             color: #fff;
+             border: none;
+             cursor: pointer;
+             border-radius: 6px; 
+             transition: background-color 0.3s ease;
+         }
+ 
+         button#submitBtn:hover {
+             background-color: #0056b3;
+         }
+ 
+         #copyBtn {
+             background-color: #ff6f61;
+             color: #fff;
+             border: none;
+             border-radius: 6px;
+             padding: 12px 25px; 
+             margin-left: 142px; 
+             margin-bottom: 50px; 
+             cursor: pointer;
+             font-size: 18px; 
+             transition: background-color 0.3s ease;
+         }
+ 
+         #copyBtn:hover {
+             background-color: #ff524e;
+         }
+ 
+         .output-box {
+             border: 1px solid #ccc;
+             padding: 15px;
+             width: 90%;
+             margin: 20px auto;
+             text-align: center;
+             background-color: #fff;
+             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+             border-radius: 8px; 
+         }
+         tr.checked {
+             background-color: lightgreen; 
+         }
+     </style>
+ </head>
+ <body>
+     <h1>Check Mate</h1>
+     <table>
+         <tr>
+             <th>Roll Number</th>
+             <th>Name</th>
+             <th>Attendance</th>
+         </tr>
+         <tr>
+             <td>21BD1A1266</td>
+             <td>A BHARATH</td>
+             <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1266"></td>
+         </tr>
+         <tr>
+             <td>21BD1A1267</td>
+             <td>AFSHEEN KAUSAR</td>
+             <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1267"></td>
+         </tr>
+         <tr>
+            <td>21BD1A1268</td>
+            <td>AKUL JAISWAL</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1268"></td>
+         </tr>
+         <tr>
+            <td>21BD1A1269</td>
+            <td>ALLADI BENJAMIN</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1269"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1270</td>
+            <td>BAJJURI OM SWAROOP</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1270"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1271</td>
+            <td>BANJALLU PRASHANTH</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1271"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1272</td>
+            <td>BENDE MEENAKSHI</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1272"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1273</td>
+            <td>KOMMA JAGAN</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1273"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1274</td>
+            <td>BHUKYA NIKHIL</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1274"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1275</td>
+            <td>BINGI AKANKSHA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1275"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1276</td>
+            <td>BOLLAPALLI ANIL KUMAR</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1276"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1277</td>
+            <td>CH GAURAV</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1277"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1278</td>
+            <td>CH N V VISHWANATHA SAI</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1278"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1279</td>
+            <td>CHILUMULA MANASA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1279"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1280</td>
+            <td>DASARI SANDEEP</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1280"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1281</td>
+            <td>DASARI SRI RAM</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1281"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1282</td>
+            <td>DAVULURI CHETANA RUPA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1282"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1283</td>
+            <td>DUDUKA NIKHIL</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1283"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1284</td>
+            <td>GUNDABATTINA SHIVAJI</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1284"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1285</td>
+            <td>HARSHITH PARISA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1285"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1286</td>
+            <td>JAGATHAP SRIYA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1286"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1287</td>
+            <td>JAMBOJU ESHWAR</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1287"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1288</td>
+            <td>KALLU PREETHAM PRASAD</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1288"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1289</td>
+            <td>KALMANOOR SRIVATSA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1289"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1290</td>
+            <td>KAMBLE TANUPRIYA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1290"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1291</td>
+            <td>KAPARTHI SHRAVANI</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1291"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1292</td>
+            <td>KARLA KEERTHI</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1292"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1293</td>
+            <td>KATAKAM SHREYA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1293"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1294</td>
+            <td>KATEPALLY DIKSHIT</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1294"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1295</td>
+            <td>KEESARI SUMA REDDY</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1295"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1296</td>
+            <td>KODA ADITYA VARDHAN</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1296"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1297</td>
+            <td>KOLICHELIME GOUTHAM RAJ</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1297"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1298</td>
+            <td>KONDA VANI</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1298"></td>
+        </tr>
+        <tr>
+            <td>21BD1A1299</td>
+            <td>KONDAMADUGU AKSHITHA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A1299"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12A0</td>
+            <td>KONDAMADUGU ANVITHA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12A0"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12A1</td>
+            <td>KONGARI AKHILA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12A1"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12A2</td>
+            <td>KOYA SATHWIK</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12A2"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12A3</td>
+            <td>MADISHETTY SRIJAN</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12A3"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12A4</td>
+            <td>MAHENDRA SRINIVAS SHREYAS</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12A4"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12A5</td>
+            <td>MANIMALA ASHISH RAJ</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12A5"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12A6</td>
+            <td>MOHAMMED SAIF UDDIN</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12A6"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12A7</td>
+            <td>MOHD MUSLEHUDDIN</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12A7"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12A8</td>
+            <td>MUDIMADUGULA SAI MANIKANTA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12A8"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12A9</td>
+            <td>N AISHWARYA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12A9"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12B0</td>
+            <td>NIMMALA BHANU PRASAD</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12B0"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12B1</td>
+            <td>NUTHULAKANTI NISHCHAL</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12B1"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12B2</td>
+            <td>P BHAVIKA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12B2"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12B3</td>
+            <td>PARVATHAM VAMSHI</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12B3"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12B4</td>
+            <td>POTTI NITIN</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12B4"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12B5</td>
+            <td>R N LAKSHITH KUMAR</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12B5"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12B6</td>
+            <td>RATHLA SANTHOSH</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12B6"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12B7</td>
+            <td>RIDDHI BHATNAGAR</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12B7"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12B8</td>
+            <td>SAKETH KASINADHUNI</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12B8"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12B9</td>
+            <td>SANJAY SRIVATSAV RAYALA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12B9"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12C0</td>
+            <td>SHAIK MOHAMMAD ASEEL</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12C0"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12C1</td>
+            <td>TANKARI ADARSH</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12C1"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12C2</td>
+            <td>TATIKONDA SHREYA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12C2"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12C3</td>
+            <td>THOGUTA VENKATESH</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12C3"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12C4</td>
+            <td>THUMPALLY SANJANA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12C4"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12C5</td>
+            <td>UPPALA SRIVATSAVA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12C5"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12C6</td>
+            <td>VADDEPELLI VIVEK PREETHAM</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12C6"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12C7</td>
+            <td>VADLA SAI TEJA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12C7"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12C8</td>
+            <td>VANAM SPOORTHI</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12C8"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12C9</td>
+            <td>VED NITIN PADMAWAR</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12C9"></td>
+        </tr>
+        <tr>
+            <td>21BD1A12D0</td>
+            <td>VENKATA HIMAVARSHA</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="21BD1A12D0"></td>
+        </tr>
+        <tr>
+            <td>22BD5A1208</td>
+            <td>jagadeesh (specs)</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="22BD5A1208"></td>
+        </tr>
+        <tr>
+            <td>22BD5A1209</td>
+            <td>Mani sai</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="22BD5A1209"></td>
+        </tr>
+        <tr>
+            <td>22BD5A1210</td>
+            <td>Priya sai anshu</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="22BD5A1210"></td>
+        </tr>
+        <tr>
+            <td>22BD5A1211</td>
+            <td>jagadish</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="22BD5A1211"></td>
+        </tr>
+        <tr>
+            <td>22BD5A1212</td>
+            <td>sneha</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="22BD5A1212"></td>
+        </tr>
+        <tr>
+            <td>22BD5A1213</td>
+            <td>umesh</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="22BD5A1213"></td>
+        </tr>
+        <tr>
+            <td>22BD5A1214</td>
+            <td>shanti</td>
+            <td><input type="checkbox" class="attendance-checkbox" value="22BD5A1214"></td>
+        </tr>
 
+        
+
+     </table>
+     <button id="submitBtn">Submit Attendance</button>
+ 
+     <div class="output-box" id="selectedRollNumbers"></div>
+     <div class="output-box" id="selectedCount"></div>
+ 
+     <button id="copyBtn">Copy</button>
+ 
+     <script>
+         document.getElementById("submitBtn").addEventListener("click", function () {
+             var checkboxes = document.querySelectorAll('.attendance-checkbox:checked');
+             var attendanceList = Array.from(checkboxes).map(function (checkbox) {
+                 return checkbox.value;
+             });
+     
+             var selectedRollNumbers = "Roll Numbers: " + attendanceList.join(', ');
+             var selectedCount = "Count of students: " + attendanceList.length;
+             
+             var outputDiv = document.getElementById("selectedRollNumbers");
+             var countOutputDiv = document.getElementById("selectedCount");
+             outputDiv.innerHTML = selectedRollNumbers ;
+             countOutputDiv.textContent = selectedCount;
+         });
+ 
+         function copyToClipboard(text) {
+             const textArea = document.createElement("textarea");
+             textArea.value = text;
+             document.body.appendChild(textArea);
+             textArea.select();
+             document.execCommand('copy');
+             document.body.removeChild(textArea);
+         }
+ 
+         document.getElementById("copyBtn").addEventListener("click", function () {
+             var selectedRollNumbers = document.getElementById("selectedRollNumbers").textContent;
+             copyToClipboard(selectedRollNumbers);
+             alert("Copied to clipboard: " + selectedRollNumbers);
+         });
+         
+         document.querySelectorAll('.attendance-checkbox').forEach(function(checkbox) {
+             checkbox.addEventListener('change', function() {
+                 var row = this.parentNode.parentNode;
+                 if (this.checked) {
+                     row.classList.add('checked');
+                 } else {
+                     row.classList.remove('checked');
+                 }
+             });
+         });
+     </script>
+ </body>
+ </html>
+ 
