@@ -6,7 +6,6 @@ Checkmate  is a straightforward web application developed using Flask and HTML/C
 
 - **Attendance Submission**: Users can mark attendance by selecting checkboxes next to each student's name and then submitting the attendance with a single click.
 - **Copy to Clipboard**: The application allows users to copy the list of selected roll numbers to the clipboard, simplifying the sharing or further processing of attendance data.
-- **Dynamic Data Rendering**: Student data is fetched dynamically from a Flask backend and rendered seamlessly on the HTML template, ensuring up-to-date information.
 - **Responsive Design**: Checkmate Attendance Tracker is designed with responsiveness in mind, offering a consistent experience across various devices.
 
 ### Technologies Used:
